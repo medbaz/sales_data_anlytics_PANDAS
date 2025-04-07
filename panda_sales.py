@@ -22,6 +22,7 @@ print("\nValeurs manquantes par colonne :")
 print(df.isnull().sum())
 
 
+
 df["revenue"] = df["revenue"].fillna(df["quantity"] * df["price"])
 df["price"] = df["price"].fillna(0)
 df["quantity"] = df["quantity"].fillna(1)
